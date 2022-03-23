@@ -1,0 +1,181 @@
+
+/* bloc contenant toutes les divs */
+.Bloc_contact {
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    padding: 10px;
+    box-shadow: 10px 20px 20px -5px gray, inset 10px 10px 50px -30px rgb(70, 70, 70);
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+}
+
+/* ligne prénom et nom */
+.line_2 {
+display: flex;
+}
+
+/* les inputs de text pour prénom et nom */
+.Inputs {
+    width: 68%;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 8px;
+}
+
+/* Bloc nom */
+.Bloc1{
+    text-align: start;
+    margin: 2% 15% 0 15%;
+    width: 30%;
+ }
+
+/* Bloc prénom */
+.Bloc2{
+    text-align: start;
+    margin-top: 2%;
+    width: 31%;
+}
+
+/* les labels nom et prénom pour les inputs */
+.labels {
+    margin-bottom: 2%;
+}
+
+/* bloc de l'email */
+.Bloc3{
+    text-align: start;
+    margin: 5% 25% 0px 15%;
+}
+
+/* l'input de l'email comme l'indique son nom  */
+.Input_email {
+    width: 110%;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 8px;
+}
+    
+/* bloc des commentaires */
+.Bloc4{
+    text-align: start;
+    margin: 5% 25% 0px 15%
+}
+
+/* inputs pour le commentaire */
+.Input_sujet {
+    margin-top: 0px;
+    width: 110%;
+    height: 100px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+}
+
+/* le bouton envoyer qui est un vrai bouton ce coup-ci*/
+.Btn_envoyer {
+    margin: 5% 0 1% 58%;
+}
+
+/* media query mobile */
+@media (max-width:768px)  {
+
+    /* bloc contenant toutes les divs */
+    .Bloc_contact {
+        text-align: center;
+        border-radius: 20px;
+        width: 90%;
+        height: 800%;
+        margin-bottom: 100px;
+    }
+    
+    /* ligne prénom et nom */
+    .line_2 {
+    display: flex;
+    }
+    
+    /* les inputs de text pour prénom et nom */
+    .Inputs {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+        border-style: none solid solid none;
+        border-width: medium 1px 1px medium;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 5px 8px;
+    }
+
+    /* Bloc nom */
+    .Bloc1{
+        text-align: start;
+        margin: 10px 15% 0px 15%;
+        width: 30%;
+     }
+    
+     /* Bloc prénom */
+    .Bloc2{
+        text-align: start;
+        margin-top: 10px;
+        width: 31%;
+    }
+    
+    /* les labels nom et prénom pour les inputs */
+    .labels {
+        margin-bottom: 5px;
+    }
+
+    /* bloc de l'email */
+    .Bloc3{
+        text-align: start;
+        margin: 50px 25% 0px 15%;
+    }
+        
+    /* l'input de l'email comme l'indique son nom  */
+    .Input_email {
+        width: 110%;
+    }
+        
+    /* bloc des commentaires */
+    .Bloc4{
+        text-align: start;
+        margin: 50px 25% 0px 15%
+    }
+    
+    /* inputs pour le commentaire */
+    .Input_sujet {
+        margin-top: 0px;
+        width: 110%;
+        height: 100px;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+        border-radius: 6px;
+        border-style: none solid solid none;
+        border-width: medium 1px 1px medium;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+        color: #555555;
+        font-size: 1em;
+        line-height: 1.4em;
+        padding: 5px 8px;
+    }
+    
+    /* le bouton envoyer qui est un vrai bouton ce coup-ci*/
+    .Btn_envoyer {
+        margin: 5% 0 0 58%;
+    }
+    
+}
+

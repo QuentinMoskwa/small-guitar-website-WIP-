@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMFactory Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+
+<!-- la nav bar -->
+<div class="topnav" id="myTopnav">
+    <img src="../images/logo.png" class="logo" alt="c'est mon logo, incroyable n'est ce pas">
+    <a class="les_liens" href="contact.html">Contact</a>
+    <a class="les_liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">A propos</a>
+    <a class="les_liens" href="galerie.html">Produits</a>
+    <a class="les_liens" href="index.html">Accueil</a>
+    <label class="menu_burger" for="toggle"></label>
+</div>
+<nav>
+    <input type="checkbox" id="toggle">
+    <div class="menu_deroulant">
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="galerie.html">Produits</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">A Propos</a>
+        </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="Bloc_contact">
+
+        <div class="line_1">
+
+            <h1>Contact</h1>
+
+        </div>
+
+        
+        <div class="line_2">
+            
+            <div class="Bloc1">
+
+                <form class="entree_text">
+                    <div><h3 class="labels">Nom</h3></div>
+                    <div><input placeholder="Daniel" class="Inputs" type="text" name="name" required pattern="[A-Za-z]+"></div>
+                </form>
+
+            </div>
+           
+            <div class="Bloc2">
+
+                <form class="entree_text">
+                    <div><h3 class="labels">Prénom</h3></div>
+                    <div><input placeholder="Théodule" class="Inputs" type="text" name="name" required pattern="[A-Za-z]+"></div>
+                </form>
+            </div>
+
+        </div>
+        <div class="line_3">
+            
+            <div class="Bloc3">
+
+                <form class="entree_text">
+                    <div><h3 class="labels">Email</h3></div>
+                    <div><input placeholder="théodule@incroyable.fr" class="Input_email" type="email" name="email" required pattern="[A-Za-z]+"></div>
+                </form>
+
+            </div>
+
+        </div>
+        
+        <div class="line_4">
+            
+            <div class="Bloc4">
+
+                <form class="entree_text">
+                    <div><h3 class="labels">Sujet</h3></div>
+                    <div><textarea placeholder="Remarques/commentaires" rows="20" name="commentaire" id="comment_text" cols="40" class="Input_sujet" autocomplete="off"></textarea></div>
+                </form>
+
+            </div>
+
+        </div>
+        
+        <div class="line_5">
+            
+            <div class="Bloc5">
+
+                <button class="Btn_envoyer">Envoyer</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

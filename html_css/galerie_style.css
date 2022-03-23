@@ -1,0 +1,176 @@
+
+
+.container {
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+/* lien "voir plus" */
+.lien_plus {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+/* ligne du titre "basse" et guitare */
+.ligne1 {
+    margin: 40px 0 0 8%;  
+}
+
+/* ligne des basses et guitares */
+.ligne2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* les bloc avec les produits et les informations */
+.bk_prod{
+    background-color: rgba(102, 96, 96, 0.4);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 1);
+    width: 250px;
+    height: 320px;
+    transition: 0.2s ease-in-out;
+}
+
+/* le premier bloc des lignes */
+.block_produit1{
+    margin: 0 10px 0px 8% ;
+}
+
+/* le reste des bloc */
+.block_produit2{
+    margin: 0 10px 0px 5% ;
+}
+
+/* les noms des instruments */
+.titre_produit {
+    margin: 5px 0px 0px 20px;
+}
+
+/* les infos des instruments */
+.info_produit{
+    font-size: small;
+    margin: 2px 0px 0px 10px;
+}
+
+/* propriété des divs avec les images */
+.img_prod{
+    width: 100%;
+    height: 80%;
+}
+
+
+/* toutes les images, j'ai préféré travailler avec des background image pour avoir plus de contrôle dessus */
+.image_produit {
+    background-image: url("../images/dingwall_ng2_6_nolly.jpeg");
+    background-size: cover;
+}
+.image_produit2 {
+    background-image: url("../images/ABZ.jpg");
+    background-size: cover;
+}
+
+.image_produit3 {
+    background-image: url("../images/strandberg_bass.jpg");
+    background-size: cover;
+    background-position: center -40px;
+    background-repeat: no-repeat;
+}
+
+.image_produit4 {
+    background-image: url("../images/dingwall.jpg");
+    background-size: 450px;
+    background-position: -100px 0px;
+    background-repeat: no-repeat;
+}
+
+.image_produit12 {
+    background-image: url("../images/cul_de_strand.jpg");
+    background-size: cover;
+    background-position: -50px;
+}
+
+.image_produit22 {
+    background-image: url("../images/ABASI.jpg");
+    background-size: cover;
+}
+
+.image_produit32 {
+    background-image: url("../images/Ibanez.jpg");
+    background-size: cover;
+    background-position: -20px 0;
+}
+
+.image_produit42 {
+    background-image: url("../images/Salen 8.png");
+    background-size: 450px;
+    background-position: center -400px;
+    background-repeat: no-repeat;
+
+
+}
+
+/* un media query pour les pc pour un effet de hover */
+@media (min-width:769px) {
+.bk_prod:hover {
+    cursor: pointer;
+    width: 300px;
+    height: 360px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 1);
+}
+
+/* media query pour mobile */
+}
+@media (max-width:768px)  {
+
+    /* met les produits les un en dessous des autres */
+    .ligne2{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* met les titres au centre */
+    .titre_galerie{
+        text-align: center;
+    }
+    .ligne1 {
+        margin: 0;  
+    }
+
+    /* ici tous les blocks ont la même propriété */
+    .block_produit1{
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 3);
+        width: 96%;
+        height: 440px;
+        margin: 0 2% 30px 2% ;
+    }
+    .block_produit2{
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 3);
+        width: 96%;
+        height: 440px;
+        margin: 0 2% 30px 2% ;
+        }
+
+    
+    .titre_produit {
+        margin: 5px 0px 0px 5px;
+    }
+    
+    .info_produit{
+        font-size: small;
+        margin: 5px 0px 0px 5px;
+    }
+
+    /* les noms des instruments */
+    .img_prod {
+        width: 100%;
+        height: 86%;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}

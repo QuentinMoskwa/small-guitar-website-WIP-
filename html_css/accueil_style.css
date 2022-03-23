@@ -1,0 +1,160 @@
+
+
+/* Un media query pour régler quelques problèmes d'interactions entre la version pc et mobile/tablette */
+@media (min-width:769px)  {
+
+
+.container {
+    display: block;
+
+}
+
+
+.ligne2 {
+    display: flex;
+    margin: 2% 10.5% 0% 10.5%;
+}
+
+/* propriétés de la première grosse image */
+.lien_photo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 79%;
+    height: 200px;
+    background-image: linear-gradient(to bottom , black , transparent ) , url("../images/cul_de_strand.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 3);
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+/* propriétés de la deuxième image */
+.photo_infos {
+    padding : 10px 0px 0px 10px;
+    background-image: url("../images/dingwall.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+    transition: 0.4s ease-in-out;
+}
+
+/* mise en page du texte d'information */
+.infos {
+max-width: 50% ;
+margin-right: 2%;
+}
+
+/* propriétés du bouton contact qui n'est rien d'autre qu'une div avec un lien */
+.btn_contact{
+    padding: 0.2em;
+    text-align: center;
+    margin: 20px 0px 0px 0px ;
+    width: 110px;
+    height:20px;
+    box-shadow: inset 0 0px 2px 0 rgba(0, 0, 0, 1);
+    transition: 0.2s ease-in-out;
+}
+
+.lien_btn_contact {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* quelques interactions en hover pour rendre le site un peu plus """beau""" */
+
+/* feedback pour le bouton de contact */
+.btn_contact:hover{
+    margin: 20px 0px 0px 0px ;
+    box-shadow:inset 0px 0px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* feeback pour la grande première image */
+.lien_photo1:hover{
+    box-shadow: 0 10px 20px 2px rgba(75, 50, 50, 1);
+    width: 85%;
+    height: 300px;
+}
+
+/* feedback pour la plus petite a côté du texte */
+.photo_infos:hover {
+    box-shadow: 0 10px 20px 2px rgba(75, 50, 50, 1);
+    width: 60%;
+    height: 400px;
+}
+}
+
+
+/* media query pour passer en mobile */
+@media (max-width:768px)  {
+
+
+.container {
+    display: block;
+
+}
+
+/* permet a ma seconde ligne (celle avec les infos) de se mettre en page pour un scroll au téléphone */
+.ligne2 {
+    display: block;
+}
+
+
+/* propriétés de la première grosse image */
+.lien_photo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 96%;
+    height: 200px;
+    background-image: url("../images/cul_de_strand.jpg");
+    background-size: cover;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 3);
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+/* mise en page du texte d'information */
+.infos {
+max-width: 90% ;
+text-align: center;
+margin:auto ;
+}
+
+/* propriétés de la deuxième image */
+.photo_infos {
+    display: flex;
+    margin: auto;
+    background-image: url("../images/dingwall.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 96%;
+    height: 350px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 3);
+}
+
+/* propriétés du bouton contact qui n'est rien d'autre qu'une div avec un lien */
+
+.btn_contact{
+    text-align: center;
+    margin: 0% 0px 50px 40%;
+    width: 110px;
+    height:20px;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 3);
+    transition: 0.2s ease-in-out;
+}
+
+.lien_btn_contact {
+    text-decoration: none;
+    color: black;
+}
+
+}
